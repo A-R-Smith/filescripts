@@ -1,0 +1,9 @@
+[Unit] 
+After=network.target 
+[Service] 
+Type=simple 
+ExecStart=/usr/local/sbin/monitor-start.sh 
+ExecStop=/usr/local/sbin/monitor-stop.sh 
+TimeoutSec=infinity 
+[Install]
+WantedBy=default.target
