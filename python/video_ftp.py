@@ -6,7 +6,6 @@ ftpURL = "nwdropbox.centralus.cloudapp.azure.com"
 username = "iotftp"
 
 #proxy info (only needed if running on enterprise network)
-# session = ftplib.FTP("localhost:3128","smita16","footba74")
 session = ftplib.FTP()
 session.connect("localhost",3128)
 
